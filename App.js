@@ -12,6 +12,7 @@ import {
   Button
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import ContactList from './src/components/ContactList';
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -48,5 +49,5 @@ class ChatScreen extends React.Component {
 
 export default SimpleApp = StackNavigator({
   Home: { screen: HomeScreen },
-  Chat: { screen: ChatScreen }
+  Chat: { screen: ContactList }
 });
